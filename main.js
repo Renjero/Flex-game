@@ -8,7 +8,7 @@ let btn3 = document.getElementById('btn3')
 
 let count = 0
 const insertBox =()=>{
-    if(grid.children.length < 8){
+    if(grid.children.length < 30){
       let square = document.createElement('div')
     square.className = "bg-yellow-600"
     square.innerText = count
@@ -27,7 +27,32 @@ const remove =() => {
     // assiment one by ekills removee from 1st
     grid.removeChild(grid.firstElementChild)
     count --
+       currentIndex--;
+
+if (grid.children.length === 0) {
+   showPopup("No more Box left to be deleted")
+        return;
+    }
+
 }
+
+// const remove = () => {
+//     if (grid.children.length > 0) {
+//         grid.removeChild(grid.firstElementChild);
+//         count--;
+
+//         // Adjust currentIndex after removal
+//         if (currentIndex > 0) {
+//             currentIndex--;
+//         }
+//     } else {
+//         showPopup("No boxes to remove!");
+//     }
+// };
+
+
+
+
 btn2.addEventListener("click", remove)
 
 // let currentIndex = 0;
@@ -38,13 +63,12 @@ btn2.addEventListener("click", remove)
 // };
 // btn3.addEventListener("click", changeColor);
 let currentIndex = 0;
-const changeColor = (message) => {
+const changeColor = () => {
     if (currentIndex < grid.children.length) {
         grid.children[currentIndex].classList.replace(
             "bg-yellow-600",
             "bg-blue-600"
         );
-
         currentIndex++;
     } else {
         showPopup("All boxes are blue!");
