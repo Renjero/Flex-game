@@ -26,9 +26,9 @@ btn1.addEventListener("click", insertBox)
 const remove =() => {
     // assiment one by ekills removee from 1st
     grid.removeChild(grid.firstElementChild)
-    count --
-       currentIndex--;
-
+       if (currentIndex > 0) {
+            currentIndex--;
+        }
 if (grid.children.length === 0) {
    showPopup("No more Box left to be deleted")
         return;
