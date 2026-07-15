@@ -3,6 +3,29 @@
 Welcome to my **30 Days JavaScript Challenge**!  
 This repository tracks my daily progress as I improve my JavaScript skills by building projects, solving problems, and practicing core concepts.
 
+## 🌐 Live Project
+
+<div align="center">
+
+<a href="https://mymap.icu/1D5JZV" target="_blank">
+  <img src="https://img.shields.io/badge/🚀_Visit_Live_Website-mymap.icu-2563eb?style=for-the-badge&logo=googlechrome&logoColor=white" />
+</a>
+
+<br><br>
+
+✨ **Experience the project live:**  
+🌐 **Live Website:** [Visit My Website](https://mymap.icu/1D5JZV)
+
+<br>
+
+📅 **Domain Status:** Active  
+⏳ **Domain Expiry:** `April 12, 2027`
+
+</div>
+<!-- Original URL: https://flex-game-omega.vercel.app -->
+
+
+
 ## 📅 Challenge Progress
 
 | Day | Time Spent | Notes                                                                                                                                                                              |
