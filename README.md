@@ -69,8 +69,57 @@ This repository tracks my daily progress as I improve my JavaScript skills by bu
 | Day | Time Spent | Notes |
 |------|------------|-------|
 | 1 | 2 Hours | Practiced DOM manipulation and events |
+---
+---
+
+## 🖼️ Project Preview
+
+<div align="center">
+
+<table>
+<tr>
+<td align="center">
+
+<img src="./Images/preview1.png" alt="Preview 1" width="220">
+
+<br>
+
+<b>Preview 1</b>
+
+<br><br>
+
+<a href="./Images/preview1.png" target="_blank">
+<img src="https://img.shields.io/badge/🔍_View_Full_Image-2563eb?style=for-the-badge">
+</a>
+
+</td>
+
+<td align="center">
+
+<img src="./Images/preview2.png" alt="Preview 2" width="220">
+
+<br>
+
+<b>Preview 2</b>
+
+<br><br>
+
+<a href="./Images/preview2.png" target="_blank">
+<img src="https://img.shields.io/badge/🔍_View_Full_Image-2563eb?style=for-the-badge">
+</a>
+
+</td>
+</tr>
+</table>
+
+</div>
 
 ---
+------
+---
+
+Happy Coding! 💻🚀
+
 
 ## ⭐ Connect
 
