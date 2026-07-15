@@ -1,6 +1,6 @@
-# 🚀 30 Days JavaScript Challenge
+# 🚀 JavaScript Challenge
 
-Welcome to my **30 Days JavaScript Challenge**!  
+Welcome to my **JavaScript Challenge**!  
 This repository tracks my daily progress as I improve my JavaScript skills by building projects, solving problems, and practicing core concepts.
 
 ## 🌐 Live Project
@@ -26,50 +26,29 @@ This repository tracks my daily progress as I improve my JavaScript skills by bu
 
 
 
-## 📅 Challenge Progress
+## 📌 Concepts Used
 
-| Day | Time Spent | Notes                                                                                                                                                                              |
-| --- | ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1   | 2 Hours    | Practiced DOM selection, creating elements, `appendChild()`, `children`, `classList`, button click events, `addEventListener()`, changing colors dynamically, and updating the UI. |
+- DOM Selection
+- `createElement()`
+- `appendChild()`
+- `children`
+- `classList`
+- `addEventListener()`
+- Dynamic Styling
+- UI Updates
 
-
----
-
-## 🛠️ Tech Stack
-
-- HTML5
-- CSS3
-- JavaScript (ES6+)
-
----
-
-## 🎯 Goal
-
-- Learn JavaScript fundamentals
-- Build mini projects
-- Improve problem-solving skills
-- Maintain consistency for 30 days
-
----
 
 ## 📂 Folder Structure
 
 ```
-📁 30-days-javascript/
+📁 Javascript/
 │── index.html
 │── style.css
 │── script.js
 │── README.md
 ```
 
----
 
-## 📌 Daily Log
-
-| Day | Time Spent | Notes |
-|------|------------|-------|
-| 1 | 2 Hours | Practiced DOM manipulation and events |
----
 ---
 
 ## 🖼️ Project Preview
@@ -115,14 +94,24 @@ This repository tracks my daily progress as I improve my JavaScript skills by bu
 </div>
 
 ---
-------
+
 ---
 
-Happy Coding! 💻🚀
+## 📌 Project Details
 
+| Details | Information |
+|---------|-------------|
+| 📅 Project Built Date | July 15, 2026 |
+| ⏰ Project Built Time | 02:00 PM - 04:00 PM |
+| 🚀 Uploaded to GitHub Date | July 15, 2026 |
+| ⏰ Uploaded to GitHub Time | 03:00 PM |
+| ⏳ Total Development Time | 2 Hours |
 
-## ⭐ Connect
+---
 
-If you like this challenge, feel free to ⭐ the repository and follow my progress!
+<div align="center">
 
-Happy Coding! 💻
+❤️ Made with Love by **Renjiro Robin** 🚀
+
+</div>
+
