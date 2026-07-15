@@ -2,6 +2,8 @@ let grid = document.getElementById('grid')
 let btn1 = document.getElementById('btn1')
 let btn2 = document.getElementById('btn2')
 let btn3 = document.getElementById('btn3')
+let btn4 = document.getElementById('btn4')
+let btn5 = document.getElementById('btn5')
 
 // let square = document.createElement('div')
 
@@ -13,7 +15,8 @@ const insertBox =()=>{
     square.className = "bg-yellow-600"
     square.innerText = count
     grid.appendChild(square)
-    console.log(grid.children.length)
+    //
+    console.log(grid.children.length + " <- length no of child  ->coun"  + count)
     count = count+1
     }
     else{
@@ -25,62 +28,81 @@ btn1.addEventListener("click", insertBox)
 
 const remove =() => {
     // assiment one by ekills removee from 1st
+      if (grid.children.length > 0) {
     grid.removeChild(grid.firstElementChild)
-       if (currentIndex > 0) {
-            currentIndex--;
-        }
-if (grid.children.length === 0) {
+  
+     // reset blue index
+        currentIndex = 0;
+
+        console.log(grid.children.length + "no of child got remove. ->coun" + count)
+      }
+else{
    showPopup("No more Box left to be deleted")
         return;
     }
-
 }
-
-// const remove = () => {
-//     if (grid.children.length > 0) {
-//         grid.removeChild(grid.firstElementChild);
-//         count--;
-
-//         // Adjust currentIndex after removal
-//         if (currentIndex > 0) {
-//             currentIndex--;
-//         }
-//     } else {
-//         showPopup("No boxes to remove!");
-//     }
-// };
-
-
-
-
 btn2.addEventListener("click", remove)
 
-// let currentIndex = 0;
-// const changeColor = () => {
-//     grid.children[currentIndex].classList.replace("bg-yellow-600", "bg-blue-600");
-//     currentIndex++;
-//     console.log(currentIndex);
-// };
-// btn3.addEventListener("click", changeColor);
+
 let currentIndex = 0;
 const changeColor = () => {
     if (currentIndex < grid.children.length) {
-        grid.children[currentIndex].classList.replace(
-            "bg-yellow-600",
-            "bg-blue-600"
-        );
-        currentIndex++;
+ grid.children[currentIndex].style.backgroundColor = "blue";
+   currentIndex++;
+ //
+     console.log(grid.children.length) 
+         console.log("chaged blue")
     } else {
         showPopup("All boxes are blue!");
     }
 };
 btn3.addEventListener("click", changeColor);
 
+let changeColorAll = () =>{
+    if(grid.children.length===0){
+        showPopup("No box left")
+    }
+
+    for(let i=0; i<grid.children.length; i++){
+         grid.children[i].style.backgroundColor = "purple";
+        }
+
+        currentIndex = 0;
+
+        
+ if (grid.lastElementChild.style.backgroundColor === "purple") {
+        showPopup("Last box is purple"); 
+         return
+    }
+
+}
+btn4.addEventListener("click", changeColorAll)
+
+
+const deleteAll = () => {
+    console.log("delete all");
+
+    for(let i = grid.children.length - 1; i >= 0; i--){
+        grid.removeChild(grid.children[i]);
+    }
+
+    currentIndex = 0;
+    count = 0;
+}
+btn5.addEventListener("click", deleteAll);
+
+
+// simple approches to dlete 
+// const deleteAll = () => {
+//     grid.innerHTML = "";
+//     currentIndex = 0;
+//     count = 0;
+// }
 
 
 
 
-// code popuup by ai 
+// code popuup by ai  showPopup
 function showPopup(message) {
     const popup = document.createElement("div");
 
@@ -101,3 +123,27 @@ function showPopup(message) {
 
     popup.querySelector("button").onclick = () => popup.remove();
 }
+
+
+
+
+// let currentIndex = 0;
+// const changeColor = () => {
+//     grid.children[currentIndex].classList.replace("bg-yellow-600", "bg-blue-600");
+//     currentIndex++;
+//     console.log(currentIndex);
+// };
+// btn3.addEventListener("click", changeColor);
+// let currentIndex = 0;
+// const changeColor = () => {
+//     if (currentIndex < grid.children.length) {
+//         grid.children[currentIndex].classList.replace(
+//             "bg-yellow-600",
+//             "bg-blue-600"
+//         );
+//         currentIndex++;
+//     } else {
+//         showPopup("All boxes are blue!");
+//     }
+// };
+
